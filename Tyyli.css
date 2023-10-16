@@ -16,6 +16,10 @@ h2 {
     color: navy;
 }
 
+h3 {
+    text-decoration:none;
+}
+
 nav {
     text-align: center;
     margin: 0 auto;
@@ -39,6 +43,10 @@ nav a:hover {
     color: white;
     width: 9em;
     height: 3em;
+}
+
+ul {
+    list-style-type:circle;
 }
 
 .sivulla {
@@ -174,9 +182,14 @@ body, html {
     color:white;
   }
 
-.column {
+.col {
     float: left;
-    width: 50%;
+    width: 45%;
+}
+
+.column {
+    float:left;
+    width: 45%;
 }
 
 .row:after {
@@ -201,6 +214,7 @@ body, html {
         vertical-align: center;
         text-align: center;
         padding-top: 10px;
+        margin-left: -120px;
         width: 100%;
         max-width: 400px;
         padding-left: 10px;
@@ -212,9 +226,132 @@ body, html {
         width: 100%;
         padding-left: 10px;
     }
+    .note {
+        clear: both;
+        width: 100%;
+        margin-left: -20px;
+        height: 200px;
+    }
+}
+
+#oakThumb {
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+#Habitica {
+    max-width: 600px;
+    max-height:400px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#ForestApp {
+    max-width: 600px;
+    max-height:400px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#kamomilla {
+    max-width:550px;
+    max-height:500px;
+    padding-top: 50px;
+}
+
+#piparminttu {
+    max-width:600px;
+    max-height:500px;
+    padding-top: 90px;
+}
+
+#note {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+#paper {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.vasen {
+    width: 45%;
+    float: left;
+}
+
+.oikea {
+    width: 45%;
+    float: right;
+}
+
+.palsta1, .palsta2 {
+    float: left;
+    width: 45%
+}
+
+.palsta2 {
+    padding-left: 45px;
+}
+
+.palstat {
+    float:left;
+    width:100%;
+}
+
+@media (max-width:1400px) {
+    .note {
+        clear: both;
+        width: 400px;
+        margin-left: -20px;
+        height: 300px;
+    }
+    main {
+        max-width: 1200px;
+        width: 95%;
+        margin: 10px;
+    }
+}
+
+@media (max-width:800px) {
+    .col, .column .palsta1, .palsta2 {
+        clear: both;
+        width: 100%;
+    }
+    .note {
+        clear: both;
+        width: 280px;
+        margin-left: -20px;
+        height: 200px;
+    }
+main {
+    max-width: 1000px;
+    width: 95%;
+    margin: 10px;
+}
+}
+
+@media (max-width:800px) {
+    #Habitica {
+        clear: both;
+        width: 100%;
+    }
+    #ForestApp {
+        clear: both;
+        width: 100%;
+    }
+    #kamomilla {
+        clear: both;
+        width: 100%;
+    }
+    #piparminttu {
+        clear: both;
+        width: 100%;
+    }
 }
 
 footer {
     border-top: black 2px solid;
     padding-top: 20px;
+    clear:both;
 }
